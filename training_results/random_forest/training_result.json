@@ -1,0 +1,31 @@
+{
+  "saved_at": "2026-05-27T09:48:27.139346",
+  "model_path": "/content/drive/MyDrive/CV팀_PosePick/models/pose_random_forest_model_final.pkl",
+  "n_features": 151,
+  "feature_keys": [
+    "coords_3d_vis",
+    "dist_3d",
+    "ratios",
+    "angles",
+    "symmetry"
+  ],
+  "label_map": {
+    "bad": 0,
+    "good": 1
+  },
+  "good_threshold": 0.7,
+  "bad_group_count": 21,
+  "default_bad_samples": 30,
+  "hard_bad_samples": 60,
+  "hard_bad_groups": [
+    8,
+    11,
+    12,
+    13
+  ],
+  "good_ratio": 2.0,
+  "random_state": 42,
+  "training_strategy": "bad group balanced sampling + hard group oversampling",
+  "good_npz_path": "/content/drive/MyDrive/PosePick/good/pose_final_dataset.npz",
+  "bad_group_dir": "/content/drive/MyDrive/PosePick/bad_group"
+}
